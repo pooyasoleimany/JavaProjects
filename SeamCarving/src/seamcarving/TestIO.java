@@ -18,5 +18,5 @@ public class TestIO implements IInputOutput{
     }
 
     @Override
-    public boolean tryWrite(int[][] m) {return false;}
+    public boolean tryWrite(int[][] m) {return true;}
 }

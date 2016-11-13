@@ -2,8 +2,8 @@
 package seamcarving;
 
 public class InputValues {
-    private int[][] matrix;
-    private int columnsToRemove;
+    private final int[][] matrix;
+    private final int columnsToRemove;
     int[][] getMatrix(){
         return this.matrix;
     }
