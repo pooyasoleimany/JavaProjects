@@ -49,7 +49,7 @@ public class FileIO implements IInputOutput{
                     "Since the first line is '" +
                     lines.get(0)+
                     "' the file should contain " +
-                    rowsCount+
+                    rowsCount+1+
                     " not empty lines "+ 
                     inputFileName
                 );
@@ -87,10 +87,10 @@ public class FileIO implements IInputOutput{
         return true;
     }
 
-    private int[] toIntArray(String[] strings) {
-        int[] result = new int[strings.length];
-        for (int i = 0; i < strings.length; i++) {
-            result[i] = Integer.parseInt(strings[i]);
+    private int[] toIntArray(String[] row) {
+        int[] result = new int[row.length];
+        for (int i = 0; i < row.length; i++) {
+            result[i] = Integer.parseInt(row[i]);
         }
         return result;
     }
