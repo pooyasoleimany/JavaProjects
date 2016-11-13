@@ -17,8 +17,8 @@ public class SeamCarving {
 
     private static void run() {
         IInputOutput io=new FileIO(
-            "C:\\Users\\pnezhadian\\Google Drive\\Personal\\Pouneh\\Project\\1-in.txt", 
-            "C:\\Users\\pnezhadian\\Google Drive\\Personal\\Pouneh\\Project\\1-out.txt", 
+            "C:\\Pouneh\\Education\\Tsinghua\\Algorithms and Combinatorics\\Course Work\\Algorithms\\Project\\4-in.txt", 
+            "C:\\Pouneh\\Education\\Tsinghua\\Algorithms and Combinatorics\\Course Work\\Algorithms\\Project\\4-out.txt", 
             log
         );
         IResizer resizer= new SeamCarveBottomUp();
@@ -42,12 +42,12 @@ public class SeamCarving {
             }
             else
             {
-                log.debug("Result is NOT saved.");
+                log.error("Result is NOT saved.");
             }
+        }else
+        {
+            log.error("Input values are invalid.");
         }
     }
 }
-             
-        
-    
-
+           
